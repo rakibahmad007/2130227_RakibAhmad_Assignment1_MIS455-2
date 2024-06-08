@@ -1,41 +1,38 @@
-body{
+body {
   margin: 20px;
+  overflow-x: hidden;
 }
 
-main{
+main {
   margin-right: 0px;
   margin-left: 0px;
 }
 
-.navbar ul{
+.navbar ul {
   list-style-type: none;
   background-color: rgb(64, 86, 104);
   padding: 0px;
   margin: 0px;
   overflow: hidden;
-
-
 }
 
-.navbar a{
+.navbar a {
   color: white;
   text-decoration: none;
   padding: 15px;
   display: block;
   text-align: center;
-
 }
 
-.navbar a:hover{
+.navbar a:hover {
   background-color: rgb(38, 40, 41);
-
 }
 
-.navbar li{
+.navbar li {
   float: left;
 }
 
-p{
+p {
   border: 2px solid rgb(168, 113, 156);
   background-color: rgb(139, 154, 153);
   margin: 20px;
@@ -46,24 +43,39 @@ p{
   cursor: pointer;
   text-align: auto;
 }
-  
 
-  p:hover {
-    box-shadow: none;}
+p:hover {
+  box-shadow: none;
+}
 
 .bottom {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   width: 100%;
-  overflow: hidden;
 }
 
-.bottom p{
+@media only screen and (max-width: 600px) {
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
     width: 100%;
-    background:rgb(191, 160, 196);
-    font-family: "Sevillana", cursive;
+  }
 }
 
+.bottom p {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background: rgb(191, 160, 196);
+  font-family: "Sevillana", cursive;
+}
+.bottom p img {
+  margin: 0 auto;
+}
 .sevillana-regular {
   font-family: "Sevillana", cursive;
   font-weight: 400;
