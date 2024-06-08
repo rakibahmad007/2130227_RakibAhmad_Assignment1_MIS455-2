@@ -1,0 +1,71 @@
+body{
+  margin: 20px;
+}
+
+main{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.navbar ul{
+  list-style-type: none;
+  background-color: rgb(64, 86, 104);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+
+
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+
+}
+
+.navbar a:hover{
+  background-color: rgb(38, 40, 41);
+
+}
+
+.navbar li{
+  float: left;
+}
+
+p{
+  border: 2px solid rgb(168, 113, 156);
+  background-color: rgb(139, 154, 153);
+  margin: 20px;
+  padding: auto;
+  border-radius: 10px;
+  transition: box-shadow 240ms;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+  text-align: auto;
+}
+  
+
+  p:hover {
+    box-shadow: none;}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bottom p{
+    width: 100%;
+    background:rgb(191, 160, 196);
+    font-family: "Sevillana", cursive;
+}
+
+.sevillana-regular {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
